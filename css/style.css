@@ -6,6 +6,10 @@ header {
   background: #6d2b70;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo-text h5 {
   padding-left: 9px;
   display: inline;
@@ -45,6 +49,7 @@ header {
 
 .top-bg {
   background-color: #933798;
+  padding: 30px 0;
 }
 .banner {
   padding-left: 15px;
@@ -302,6 +307,21 @@ footer {
   color: white;
   font-size: 16px;
 }
-.director a i {
-  justify-content: flex-end;
+
+.gotTop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  /* background: #933798; */
+  border: 2px solid white;
+  border-radius: 50%;
+  bottom: 6px;
+  right: 30px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+.gotTop:hover {
+  color: white;
 }

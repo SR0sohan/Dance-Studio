@@ -430,7 +430,7 @@
               <div class="director text-center">
                 <span class="">copyright &copy; 2021 All rights reserved to Dance Studio.</span> 
               </div>
-              <!-- <div><a href="#home"><i class="fas fa-chevron-up fa-2x text-right"></i></a></div>  -->
+              <div><a href="#" id="Top" class="gotTop"><i class="fas fa-chevron-up fa-2x text-right"></i></a></div> 
             </div>
           </div>
         </div>
@@ -440,16 +440,58 @@
 
 
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+          <script>
+            // $(document).ready(funtion(){
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
+            //   $(window).scroll(function(){
+            //     if($(this).scrollTop() > 40){
+            //       $('#Top').fadeIn()
+            //     }else{
+            //       $('#Top').fadeOut();
+            //     }
+            //   })
+
+            //   $("#Top").click(function(){
+            //     $('html,body').animate({scrollTop : 0},800);
+            //   });
+            
+            // });
+
+              // $(window).scroll(function(){
+              //     if(this.scrollY > 20){
+              //         $(".navbar").addClass("sticky");
+              //         $(".gotTop").fadeIn();
+              //     }
+              //     else{
+              //         $(".navbar").removeClass("sticky");
+              //         $(".gotTop").fadeOut();
+              //     }
+                  
+              // });
+
+              // $(".gotTop").click(function(){scroll(0,0)});
+
+              $(window).scroll(function(){
+                if($(this).scrollTop() > 40){
+                  $('#Top').fadeIn()
+                }else{
+                  $('#Top').fadeOut();
+                }
+              })
+
+              $("#Top").click(function(){
+                $('html,body').animate({scrollTop : 0},800);
+              });
+            
+          </script>
+    
   </body>
 </html>
